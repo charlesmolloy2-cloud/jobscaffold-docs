@@ -23,7 +23,7 @@ export default function FlowContractorPage() {
         </Section>
 
         <li>
-         Tap the "Create" button to submit the  form, create the contractor account, log in, and navigate to the externally hosted Stripe subscription page.
+          Tap the "Create" button to submit the  form, create the contractor account, log in, and navigate to the externally hosted Stripe subscription page.
         </li>
 
         <li>
@@ -66,7 +66,7 @@ export default function FlowContractorPage() {
         </Section>
 
         <li>
-          Submit the form to update the contractor profile and navigate to
+          Submit the form to update the contractor page profile and navigate to
           /projects.
         </li>
 
@@ -80,33 +80,33 @@ export default function FlowContractorPage() {
           <li>Logout</li>
         </Section>
 
-        <Section label='Tap the "Projects" tab to navigate to /projects'>
-          <Section label='Tap "Create New Project" to open the composer'>
-            <BulletGroup label="Required">
-              <li>Name</li>
-              <li>Address</li>
-              <li>
-                Type
-                <ul className="bullet-list">
-                  <li>Remodel</li>
-                  <li>Addition</li>
-                  <li>New build</li>
-                  <li>Repair</li>
-                  <li>Other</li>
-                </ul>
-              </li>
-              <li>Client name</li>
-            </BulletGroup>
 
-            <BulletGroup label="Optional">
-              <li>Estimated start date</li>
-              <li>Estimated completion date</li>
-              <li>Description</li>
-              <li>Client email</li>
-              <li>Client phone number</li>
-              <li>Notes</li>
-            </BulletGroup>
-          </Section>
+        <Section label='Tap "Create New Project" to open the composer'>
+          <BulletGroup label="Required">
+            <li>Name</li>
+            <li>Address</li>
+            <li>
+              Type
+              <ul className="bullet-list">
+                <li>Remodel</li>
+                <li>Addition</li>
+                <li>New build</li>
+                <li>Repair</li>
+                <li>Other</li>
+              </ul>
+            </li>
+            <li>Client name</li>
+          </BulletGroup>
+
+          <BulletGroup label="Optional">
+            <li>Estimated start date</li>
+            <li>Estimated completion date</li>
+            <li>Description</li>
+            <li>Client email</li>
+            <li>Client phone number</li>
+            <li>Notes</li>
+          </BulletGroup>
+
 
           <li>Submit the composer to create the project.</li>
 
@@ -322,16 +322,16 @@ export default function FlowContractorPage() {
             <li>
               Enter the new password in the "Confirm password" field.
             </li>
-<li> 
-  Tap "Change password" to submit the form close the diaglog and update the password. 
-</li>
+            <li>
+              Tap "Change password" to submit the form close the diaglog and update the password.
+            </li>
           </Section>
 
 
           <li>Tap on the manage stripe button to open the external stripe profile.</li>
 
         </Section>
-        <li> 
+        <li>
           Tap "Logout" in the navbar to close the session.
         </li>
       </ol>
