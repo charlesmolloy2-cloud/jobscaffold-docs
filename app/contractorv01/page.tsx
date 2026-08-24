@@ -23,8 +23,7 @@ export default function FlowContractorPage() {
         </Section>
 
         <li>
-          Submit the registration form to create the contractor account, log in,
-          and navigate to the externally hosted Stripe subscription page.
+         Tap the "Create" button to submit the  form, create the contractor account, log in, and navigate to the externally hosted Stripe subscription page.
         </li>
 
         <li>
