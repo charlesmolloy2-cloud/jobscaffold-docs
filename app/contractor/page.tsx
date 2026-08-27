@@ -118,7 +118,15 @@ export default function FlowContractorPage() {
           <li>
             Tap the project&apos;s name to navigate to the project overview page at /projects/PROJECT_ID and confirm all the details entered in the composer and an /invites/INVITE_ID URL is displayed .
           </li>
+          <Section label="Tap Edit Project To Open The Composer">
+            <li>
+              Confirm the form is pre filled with the projects details.
+            </li>
+            <li> Update the details in the form.</li>
+            <li> Tap submit to update the project and close the composer.
 
+            </li>
+          </Section>
           <li>Click the "Copy URL"  button copy the invite URL.</li>
 
           <li>
