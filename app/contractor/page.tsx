@@ -52,7 +52,7 @@ export default function FlowContractorPage() {
             <BulletGroup>
               <li>Phone number</li>
               <li>Physical address</li>
-              <li>Service area (service type)</li>
+              <li>Service Type</li>
             </BulletGroup>
           </Section>
 
@@ -127,7 +127,7 @@ export default function FlowContractorPage() {
 
             </li>
           </Section>
-          <li>Click the "Copy URL"  button copy the invite URL.</li>
+          <li>Click the "Invite Client" button to copy the invite URL.</li>
 
           <li>
             Send the invite URL to the client through an external service.
@@ -140,7 +140,10 @@ export default function FlowContractorPage() {
         </Section>
 
         <Section label='Tap the "Updates" tab to navigate to /updates'>
-          <Section label='Click "Create Update" to open the composer'>
+        <li> Tap "Create Update" to open the composer</li>
+        <li>Tap "Back to Project Updates" to close the composer</li>
+        
+          <Section label='Tap "Create Update" to open the composer'>
             <BulletGroup label="Required">
               <li>Project</li>
               <li>Update</li>
@@ -154,7 +157,7 @@ export default function FlowContractorPage() {
           </Section>
 
           <li>
-            Submit the composer to send an email to the client about the new
+            TAP Publish Update to submit the composer to send an email to the client about the new
             update.
           </li>
 
@@ -176,6 +179,7 @@ export default function FlowContractorPage() {
           <Section label="Tap the new update date in the list to navigate to /updates/UPDATE_ID">
             <li>Confirm the infromation entered into the composer is provided the update is displayed</li>
             <li>Tap a photo to expand it</li>
+            <li>Tap the "Back Button" to collapise the photo</li> 
             <li>
               Tap "Download" to download a zip file of the update&apos;s
               photos
@@ -185,7 +189,7 @@ export default function FlowContractorPage() {
 
         <Section label='Tap the "Messages" tab to navigate to /messages'>
           <li>
-            Confirm each project has a tab in the conversation list.
+            Confirm each project conversation appears in the list with an unread indicator, the clients name on top, the project name, text and time of the last recived message. 
           </li>
 
           <Section label=' Tap the project conversation to navigate to /messages/PROJECT_ID and confirm the conversation history is empty.'>
@@ -238,7 +242,7 @@ export default function FlowContractorPage() {
           </li>
 
           <li>
-            Confirm the event appears in the calendar with the project&apos;s
+            Confirm the event appears in the list with the project&apos;s
             name.
           </li>
 
