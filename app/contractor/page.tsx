@@ -108,7 +108,7 @@ export default function FlowContractorPage() {
           </BulletGroup>
 
 
-          <li>Submit the composer to create the project.</li>
+          <li>Tap "Create Project" to submit the composer to create the project.</li>
 
           <li>
             Confirm the project&apos;s name appears in the list below the
@@ -140,9 +140,9 @@ export default function FlowContractorPage() {
         </Section>
 
         <Section label='Tap the "Updates" tab to navigate to /updates'>
-        <li> Tap "Create Update" to open the composer</li>
-        <li>Tap "Back to Project Updates" to close the composer</li>
-        
+          <li> Tap "Create Update" to open the composer</li>
+          <li>Tap "Back to Project Updates" to close the composer</li>
+
           <Section label='Tap "Create Update" to open the composer'>
             <BulletGroup label="Required">
               <li>Project</li>
@@ -179,17 +179,24 @@ export default function FlowContractorPage() {
           <Section label="Tap the new update date in the list to navigate to /updates/UPDATE_ID">
             <li>Confirm the infromation entered into the composer is provided the update is displayed</li>
             <li>Tap a photo to expand it</li>
-            <li>Tap the "Back Button" to collapise the photo</li> 
+            <li>Tap the "Back Button" to collapise the photo</li>
             <li>
               Tap "Download" to download a zip file of the update&apos;s
               photos
+            </li>
+          </Section>
+          <Section label="Tap the project filter button to open the modal">
+            <li> Tap the name of the newly created project to close the modal and apply the filter.
+            </li>
+            <li> Confirm the projects name appears as a filter buttopn above the list and only updates from that project show in the list. </li>
+            <li> Tap the filter button to remove it and return to the full list.
             </li>
           </Section>
         </Section>
 
         <Section label='Tap the "Messages" tab to navigate to /messages'>
           <li>
-            Confirm each project conversation appears in the list with an unread indicator, the clients name on top, the project name, text and time of the last recived message. 
+            Confirm each project conversation appears in the list with an unread indicator, the clients name on top, the project name, text and time of the last recived message.
           </li>
 
           <Section label=' Tap the project conversation to navigate to /messages/PROJECT_ID and confirm the conversation history is empty.'>
@@ -202,6 +209,9 @@ export default function FlowContractorPage() {
               Confirm the new message appears unread in the conversation history
               with its timestamp.
             </li>
+            <li>
+            After the client reads the message, confrim the message is marked as read.
+            </li>
 
             <li>
               After the client sends a message, confirm the new message appears
@@ -211,28 +221,19 @@ export default function FlowContractorPage() {
           </Section>
         </Section>
 
-        {/* 
-        <li>Add project milestones.</li>
-        <li>Add scheduled work days.</li> OK
-        <li>Add inspections.</li> OK
-        <li>Add material deliveries.</li> OK
-        <li>Add client meetings.</li> OK
-        <li>Edit calendar events.</li>
-        <li>Delete calendar events.</li>
-        <li>Display upcoming milestones on the Project Overview page.</li>
-        */}
+        
 
         <Section label='Tap the "Calendar" tab to navigate to /calendar and confirm the calendar is empty'>
           <Section label='Click "Create Event" to open the composer'>
             <BulletGroup label="Required">
               <li>Project</li>
-              <li>Type</li>
+              <li>Title</li>
               <li>Date</li>
+              <li>Description</li>
             </BulletGroup>
 
             <BulletGroup label="Optional">
               <li>Time</li>
-              <li>Description</li>
             </BulletGroup>
           </Section>
 
@@ -242,11 +243,10 @@ export default function FlowContractorPage() {
           </li>
 
           <li>
-            Confirm the event appears in the list with the project&apos;s
-            name.
+            Confirm the event appears in the list with the date, time, and project's name.
           </li>
 
-          <Section label='Tap the project filter button to open the project filter dialog'>
+          <Section label='Tap the project "Filter By Project" button to open the "Filter By Project" dialog'>
             <li>
               Tap on a projects name in the dialog to close the dialog.
             </li>
@@ -278,16 +278,14 @@ export default function FlowContractorPage() {
 
         <Section label='Tap the "AI" tab to navigate to /ai'>
           <li>
-            Comfirm the general tab appears at the top of the conversation list.
-          </li>
-          <li>
             Confirm each project has its own tab in the conversation list.
           </li>
 
-          <Section label=' Tap a project conversation to navigate to /ai/PROJECT_ID and confirm the conversation history is empty.'>
+          <Section label="Tap a project conversation to navigate to /ai/PROJECT_ID and confirm the project's name is the pages title and the conversation history is empty.">
             <li>
-              Use the inline form to send a new message to the
-              AI.
+              Enter the question into the inline form's "Ask AI" field.            </li>
+            <li>
+              Submit the form with the "Submit" button to send a new message to the AI.
             </li>
 
             <li>
@@ -300,7 +298,7 @@ export default function FlowContractorPage() {
             </li>
           </Section>
 
-          <Section label=' Tap the general conversation to navigate to /ai/general and confirm the conversation history is empty.'>
+          <Section label=' Tap the general conversation at the top of the list with the blue backround to navigate to /ai/general and confirm tthe pages title is general and the conversation history is empty.'>
             <li>
               Use the inline form to send a new message to the
               AI.
@@ -320,9 +318,29 @@ export default function FlowContractorPage() {
 
 
         <Section label='Tap the "Settings" tab to navigate to /settings'>
-          <li>Update contractor profile</li>
-          <li>Update company information</li>
-          <Section label='Click the "Change password button" to open the dialog'>
+          <Section label='Tap the "Profile" button to navigate to /settings/profile'>
+            <Section label='Complete the form'>
+              <li>
+                Name
+              </li>
+              <li>
+                Phone Number
+              </li>
+              <li>
+                Business or Physical Adress
+              </li>
+              <li>
+                Service Area
+              </li>
+              <li>
+                Type of Work/Service Type
+              </li>
+            </Section>
+            <li>
+            Submit the form to update the users contractor profile. 
+            </li>
+          </Section>
+          <Section label='Tap the "Security" button to naviaagte to /settings/security'>
             <li>
               Enter the old password in the "Current password" field.
             </li>
@@ -339,13 +357,20 @@ export default function FlowContractorPage() {
             </li>
           </Section>
 
-
-          <li>Tap on the manage stripe button to open the external stripe profile.</li>
-
         </Section>
-        <li>
-          Tap "Logout" in the navbar to close the session.
+        <Section label='Tap "Logout" in the navbar to close the session and navigate to /login'>
+        <Section label='Comeplete the forms required fields'>
+        <li> 
+        Email Adress
         </li>
+        <li>
+        Password
+        </li>
+        </Section>
+        <li> 
+        Tap "Login" to submit the form and create a new session.
+        </li>
+        </Section>
       </ol>
     </div>
   );
