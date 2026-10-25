@@ -9,11 +9,10 @@ export default function FlowContractorPage() {
         <li>Navigate to /.</li>
 
         <li>
-          Click "Register as a Contractor" on the homepage to navigate to
-          /register/contractor.
+          Click "Register as a Contractor" on the homepage to navigate to /register/contractor.
         </li>
 
-        <Section label="Fill out the registration form">
+        <Section label="Fill out all of the required fields in the registration form">
           <li>First name</li>
           <li>Last name</li>
           <li>Company name</li>
