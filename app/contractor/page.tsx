@@ -51,7 +51,7 @@ export default function FlowContractorPage() {
             <BulletGroup>
               <li>Phone number</li>
               <li>Physical address</li>
-              <li>Service type</li>
+              <li>Service description</li>
             </BulletGroup>
           </Section>
 
@@ -114,7 +114,7 @@ export default function FlowContractorPage() {
           </li>
 
           <li>
-            Tap the project&apos;s name to navigate to the project overview page at /projects/PROJECT_ID and confirm all the details entered in the composer and an /invites/INVITE_ID URL is displayed .
+            Tap the project&apos;s name to navigate to the project overview page at /projects/PROJECT_ID and confirm all the details entered in the composer and an /invites/INVITE_ID URL is displayed.
           </li>
           <Section label="Tap Edit Project To Open The Composer">
             <li>
@@ -260,7 +260,7 @@ export default function FlowContractorPage() {
           <BulletGroup label="Tap a calendar event to edit it in the composer and confirm the event details are pre filled.">
 
             <li>Project</li>
-            <li>Type</li>
+            <li>Title</li>
             <li>Date</li>
             <li>Time</li>
             <li>Description</li>
@@ -316,7 +316,7 @@ export default function FlowContractorPage() {
 
 
         <Section label='Tap the "Settings" tab to navigate to /settings'>
-          <Section label='Tap the "Profile" button to navigate to /settings/profile'>
+          <Section label='Tap the "Profile" button to navigate to /settings/profile and confirm the fields are pre filled with the saved settings'>
             <Section label='Complete the form'>
                <Section label="Required">
             <BulletGroup>

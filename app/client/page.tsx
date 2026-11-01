@@ -7,8 +7,7 @@ export default function FlowClientPage() {
 
       <ol className="nested">
         <li>
-          Receive an invitation from the contractor with an invitation URL
-          (/projects/PROJECT_ID/client).
+          Receive an invitation from the contractor with an invitation URL (/invites/INVITE_ID).
         </li>
 
 
@@ -21,8 +20,7 @@ export default function FlowClientPage() {
         </Section>
 
         <li>
-          Submit the registration form to create the client account and navigate
-          to /projects/PROJECT_ID.
+          Submit the registration form to create the client account and navigate to /projects/PROJECT_ID.
         </li>
 
         <Section label="Confirm the nav bar is complete main navigation">
@@ -107,7 +105,7 @@ After the contractor reads the message, confrim that the message is marked as re
          </li>
          <Section label='Tap an event to navigate to /projects/PROJECT_ID/calendar/EVENT_ID to review the event details'>
           <li>Project</li>
-            <li>Type</li>
+            <li>Title</li>
             <li>Date</li>
             <li>Time</li>
             <li>Description</li>
