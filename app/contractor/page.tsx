@@ -51,15 +51,14 @@ export default function FlowContractorPage() {
             <BulletGroup>
               <li>Phone number</li>
               <li>Physical address</li>
-              <li>Service Type</li>
+              <li>Service type</li>
             </BulletGroup>
           </Section>
 
           <Section label="Optional">
             <BulletGroup>
-              <li>Logo</li>
-              <li>License</li>
-              <li>Insurance</li>
+              <li>License number</li>
+              <li>Insurer name</li>
             </BulletGroup>
           </Section>
         </Section>
@@ -319,21 +318,20 @@ export default function FlowContractorPage() {
         <Section label='Tap the "Settings" tab to navigate to /settings'>
           <Section label='Tap the "Profile" button to navigate to /settings/profile'>
             <Section label='Complete the form'>
-              <li>
-                Name
-              </li>
-              <li>
-                Phone Number
-              </li>
-              <li>
-                Business or Physical Adress
-              </li>
-              <li>
-                Service Area
-              </li>
-              <li>
-                Type of Work/Service Type
-              </li>
+               <Section label="Required">
+            <BulletGroup>
+              <li>Phone number</li>
+              <li>Physical address</li>
+              <li>Service type</li>
+            </BulletGroup>
+          </Section>
+
+          <Section label="Optional">
+            <BulletGroup>
+              <li>License number</li>
+              <li>Insurer name</li>
+            </BulletGroup>
+          </Section>
             </Section>
             <li>
             Submit the form to update the users contractor profile. 
